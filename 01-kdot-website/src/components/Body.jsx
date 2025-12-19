@@ -26,7 +26,7 @@ const Body = () => {
 
       {/* Right Side */}
       <div className="hero-right">
-        <img src="623d05a1e1cbb9749fdac0ba5d8d8306.jpg" alt="Portrait" />
+        <img src="/images/kendrick-hero-img.jpg" alt="Portrait" />
       </div>
     </section>
     <p className="playground-link">
