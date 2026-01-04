@@ -1,0 +1,156 @@
+* {
+  
+  color : rgb(5, 5, 5);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+    background-color: #F2F3F2;
+
+}
+.navbar {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.era {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+/* BUTTON */
+.nav-btn {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 10px 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  padding: 0 100px;
+
+}
+
+.hero-left {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-left h1 {
+  font-size: 140px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  top: 80px;
+}
+
+.stats h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.stats p {
+  font-size: 14px;
+  color: #777;
+}
+
+
+.vertical-text {
+  position: absolute;
+  left: -80px;
+  top: 51%;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  color: #888;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+ align-items: center;
+ gap: 55px;
+  justify-content: center;
+}
+
+.hero-right img {
+  height: 600px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+.playground-link {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.playground-link span {
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  padding-bottom: 4px;
+}
+
+.playground-link:hover {
+  opacity: 1;
+}
