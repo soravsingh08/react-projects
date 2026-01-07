@@ -1,31 +1,22 @@
 import React from 'react'
-import SeventyEightUE from './lectures/SeventyEightUE'
-import SeventyNineRouter from './lectures/SeventyNineRouter'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import { Link } from 'react-router-dom'
+
+import { useState } from 'react'
+import Navbar from './components/Navbar'
 
 const App = () => {
+
+  const [theme, setTheme] = useState('Light')
+   const changeTheme = (newTheme) => {
+    setTheme(newTheme)
+   }
+
+
   return (
     <div>
-    {/* <SeventyEightUE/> */}
-
-    <div className=' flex justify-between text-3xl bg-pink-900 px-8 py-4'>
-      <h2>Navbar</h2>
-      <div className='flex gap-30'>
-        <Link to={'/'}>Home</Link>
-        <Link to={'/about'}>About</Link>
-          <Link to={'/product'}>Product</Link>
-        
+      <h1>Theme is {theme}</h1>
+      <Navbar changeTheme={changeTheme}/>
       
-      </div>
-    </div>
 
-   <Routes>
- <Route path = "/" element = {<Home/>}/>
-  <Route path = "/about" element = {<About/>}/>
-   </Routes>
     </div>
   )
 }
